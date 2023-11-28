@@ -1,0 +1,63 @@
+<div style="height: 75vh;">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>TRSTO1</span>
+      <img src="https://trst01.com/wp-content/uploads/2023/05/trust-logo_final-01.png" alt="" width="60" height="34"
+        class="d-inline-block align-text-top">
+      <span class="menu-spacer"></span>
+      <button mat-icon-button>
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <span>Phani</span>
+      <button mat-icon-button>
+        <mat-icon>exit_to_app</mat-icon>
+      </button>
+      <span>Logout</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <a href="#dashboard" mat-list-item>Dashboard</a>
+        <a href="#admin" mat-list-item>Admin</a>
+        <a href="#projects" mat-list-item>Projects</a>
+        <a href="#reports" mat-list-item>Reports</a>
+        <a href="#careers" mat-list-item>Careers</a>
+        <a href="#contactus" mat-list-item>Contact Us</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill id="dashboard">
+      <mat-card class="center-text">
+        <mat-card-content>
+          <h2>Welcome to the Dashboard of Sample Application for TRST01!</h2>
+        </mat-card-content>
+      </mat-card>
+    </mat-sidenav-content>
+    <!-- <mat-sidenav-content fxFlexFill id="admin">    
+      <h2>Welcome to the Admin Page of Sample Application for TRST01!</h2>
+    </mat-sidenav-content>
+    <mat-sidenav-content fxFlexFill id="projects">    
+      <h2>Welcome to the Projects Page of Sample Application for TRST01!</h2>
+    </mat-sidenav-content>
+    <mat-sidenav-content fxFlexFill id="reports">    
+      <h2>Welcome to the Reports Page of Sample Application for TRST01!</h2>
+    </mat-sidenav-content>
+    <mat-sidenav-content fxFlexFill id="careers">    
+      <h2>Welcome to the Careers Page of Sample Application for TRST01!</h2>
+    </mat-sidenav-content>
+    <mat-sidenav-content fxFlexFill id="contactus">    
+      <h2>Welcome to the Contact Us Page of Sample Application for TRST01!</h2>
+    </mat-sidenav-content> -->
+  </mat-sidenav-container>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>
+        <p>&copy; 2023 TRST01. All rights reserved.</p>
+      </span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
